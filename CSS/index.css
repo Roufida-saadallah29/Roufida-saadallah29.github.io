@@ -1,0 +1,583 @@
+@import url("https://fonts.googleapis.com/css?family=DM+Sans:400,500,700&display=swap");
+/* variables */
+:root {
+  --backGroundColor: #1d1e2c;
+  --darkbrownColor: #9c8e80;
+  --lightbrownColor: #d8d5d4;
+}
+
+
+
+.hide-logo {
+  display: none;
+}
+
+
+body {
+  /* Ensure smooth transition when the navbar becomes fixed */
+  transition: padding-top 0.5s ease;
+}
+
+* {
+  box-sizing: border-box;
+}
+html {
+  height: 100%;
+}
+body {
+  background-color: var(--backGroundColor);
+  overflow-x: hidden;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: white;
+  height: 100%;
+}
+hr {
+  background-color: rgba(85, 84, 83, 0.6);
+  width: 80%;
+}
+.Container {
+  width: 90%;
+  margin: 0 auto;
+}
+.rec {
+  position: absolute;
+}
+
+
+/* navbar */
+.navbar {
+  color: ivory;
+  background-color: #464c55;
+  width: 100%;
+  font-weight: 700;
+}
+
+.navbar-nav {
+  right: 15px;
+}
+
+.elements {
+  width: 60%;
+  font-size: 25px;
+  text-align: center;
+}
+
+.ligne {
+  width: 0px;
+  height: 0px;
+  margin: 0 auto;
+  background-color: white;
+  transition: width 0.5s;
+  border-radius: 5px;
+}
+.elem {
+  cursor: pointer;
+}
+.elem:hover > .ligne {
+  height: 3px;
+  width: 70%;
+}
+
+/* front page */
+.front_page {
+  height: 100vh;
+}
+.PhotoContainer > img {
+  width: 50%;
+  display: block;
+  margin: 0 auto;
+  margin-top: -50px;
+  animation: profilPicanim 1s;
+}
+
+@keyframes profilPicanim {
+  0% {
+    width: 40%;
+    opacity: 0.5;
+  }
+  100% {
+    width: 50%;
+    opacity: 1;
+  }
+}
+.bio {
+  font-size: 50px;
+  font-weight: 500;
+  width: fit-content;
+  height: fit-content;
+  margin: 0 auto;
+  margin-top: 20%;
+  line-height: 60px;
+}
+.bio > strong {
+  color: var(--darkbrownColor);
+}
+
+.knowMoreBtn {
+  background-color: transparent;
+  border-radius: 17px;
+  font-size: 30px;
+  border-color: var(--lightbrownColor);
+  border-width: 2px;
+  width: 230px;
+  height: 60px;
+  color: var(--lightbrownColor);
+  font-weight: 500;
+}
+
+.knowMoreBtn:hover {
+  color: white;
+  background-color: rgba(85, 84, 83, 0.4);
+}
+
+.seeProjectBtn {
+  background-color: transparent;
+  border-radius: 17px;
+  font-size: 30px;
+  border-color: var(--lightbrownColor);
+  border-width: 2px;
+  width: 230px;
+  height: 60px;
+  color: var(--lightbrownColor);
+  font-weight: 500;
+}
+
+.seeProjectBtn:hover {
+  color: white;
+  background-color: rgba(85, 84, 83, 0.4);
+}
+
+
+/* Social Media */
+.socialMedia {
+  font-size: 30px;
+  text-align: center;
+  height: fit-content;
+  margin: auto 0;
+}
+
+/* About Me */
+.infoSections {
+  font-size: 20px;
+  border: solid;
+  border-width: 0 4px 0 0;
+  border-color: var(--darkbrownColor);
+  position: relative;
+}
+.circle {
+  width: 25px;
+  height: 25px;
+  background-color: var(--darkbrownColor);
+  position: absolute;
+  top: 0px;
+  right: -15px;
+  border-radius: 50%;
+}
+.aboutinfos {
+  font-weight: 300;
+  color: var(--lightbrownColor);
+  font-size: 15px;
+}
+i {
+  cursor: pointer;
+}
+.aboutinfos > div {
+  margin: 10px 0;
+}
+.aboutinfos > div > i {
+  font-size: 25px;
+  width: 25px;
+  text-align: center;
+}
+.progress {
+  border-radius: 20px;
+  height: 12px;
+  margin-top: 10px;
+}
+.skillname {
+  font-size: 20px;
+  color: var(--lightbrownColor);
+  font-weight: 500;
+}
+.progress-bar {
+  background-color: var(--darkbrownColor);
+  opacity: 0.7;
+}
+.Personalinfo {
+  font-size: 30px;
+  font-weight: 700;
+  color: var(--darkbrownColor);
+}
+.hellocarc {
+  display: block;
+  margin: 0 auto;
+}
+.titles {
+  font-weight: 900;
+  color: var(--lightbrownColor);
+  font-size: 30px;
+}
+
+/* experience */
+.experienceS > div {
+  height: 350px;
+}
+.experienceCard {
+  width: 90%;
+  height: 280px;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+  margin: 0 auto;
+  position: relative;
+  transition: height 1s;
+  padding: 20px;
+  border: solid;
+  border-width: 0.01px;
+  border-color: rgba(216, 213, 212, 0.15);
+}
+.experiencebg {
+  position: absolute;
+  width: 100%;
+  border-radius: 10px;
+  top: -50px;
+  left: -20px;
+  transition: all 1s;
+}
+
+.experienceinfo {
+  width: 100%;
+  border-radius: 0 0 10px 10px;
+}
+.experiencetitle {
+  font-size: 25px;
+  font-weight: 700;
+}
+.experienceDetails {
+  padding-top: 10px;
+  padding-left: 10px;
+  font-size: 14px;
+  color: var(--lightbrownColor);
+}
+
+.experienceLogo {
+  position: absolute;
+  width: 80px;
+  bottom: 10px;
+  right: 40px;
+  transition: all 1s;
+}
+
+.experienceDate{
+  position: absolute;
+  bottom: 30px;
+  left: 40px;
+  transition: all 1s;
+}
+
+
+/* Work */
+.WOrKS > div {
+  height: 480px;
+}
+.WorkCard {
+  width: 90%;
+  height: 280px;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+  margin: 0 auto;
+  position: relative;
+  transition: height 1s;
+  padding: 20px;
+  border: solid;
+  border-width: 0.01px;
+  border-color: rgba(216, 213, 212, 0.15);
+}
+.workbg {
+  position: absolute;
+  width: 100%;
+  border-radius: 10px;
+  top: -20px;
+  left: -20px;
+  transition: all 1s;
+}
+
+.Workinfo {
+  width: 100%;
+  border-radius: 0 0 10px 10px;
+  display: none;
+}
+.worktitle {
+  margin-top: 50px;
+  font-size: 25px;
+  font-weight: 700;
+}
+.workDetails {
+  padding-left: 10px;
+  font-size: 13px;
+  font-weight: 400;
+  color: var(--lightbrownColor);
+}
+.technologies {
+  margin-top: 10px;
+  font-size: 13px;
+  font-weight: 400;
+}
+.SeeProject {
+  width: 90%;
+  margin: 0 auto;
+  font-size: 16px;
+  height: 40px;
+  border-radius: 10px;
+  display: none;
+}
+.actions {
+  position: absolute;
+  bottom: 10px;
+  font-size: 25px;
+  width: 100%;
+}
+.actions > i {
+  opacity: 0.8;
+}
+.WorkLogo {
+  position: absolute;
+  width: 80px;
+  bottom: 10px;
+  right: 40px;
+  transition: all 1s;
+}
+.WorkCard:hover {
+  height: fit-content;
+}
+.WorkCard:hover > .workbg {
+  width: 60%;
+  left: 35%;
+  box-shadow: 0px 2px 20px 0px rgba(10, 12, 58, 0.2);
+}
+.SeeProject{
+	display: none;
+}
+.WorkCard:hover .SeeProject {
+  display: block;
+}
+.WorkCard:hover > .Workinfo {
+  display: block;
+}
+.WorkCard:hover > .actions {
+  position: relative;
+}
+.WorkCard:hover > .WorkLogo {
+  top: -20px;
+  width: 130px;
+  left: -50px;
+}
+
+/* Home page */
+.FrontPage {
+  background-color: #464c55;
+  height: 100vh;
+}
+.FrontSection {
+  width: 50%;
+  height: 500px;
+  margin: 0 auto;
+  margin-top: 100px;
+}
+
+
+
+.contactCadre {
+  background-color: rgba(216, 213, 212, 0.15);
+  border-radius: 10px;
+  border: solid;
+  border-color: var(--lightbrownColor);
+  padding: 20px;
+  padding-left: 100px;
+  border-width: 1px;
+}
+.SubmitBtn {
+  background-color: rgba(216, 213, 212, 0.25);
+  border-radius: 10px;
+  border: solid;
+  border-color: var(--lightbrownColor);
+  border-width: 1px;
+  width: 200px;
+  margin-top: 10px;
+  height: 50px;
+  color: var(--lightbrownColor);
+  font-size: 22px;
+  font-weight: 700;
+}
+.SubmitBtn:hover {
+  background-color: rgba(216, 213, 212, 0.45);
+  color: var(--backGroundColor);
+}
+
+
+/* Contact Me */
+.ContactMe {
+
+}
+.contactSection {
+  width: 40%;
+  margin: 0 auto;
+  margin-top: 100px;
+}
+.contacthref
+{
+  color:var(--lightbrownColor);;
+}
+.contacthref:hover{
+
+  color: var(--backGroundColor);
+}
+
+@media only screen and (max-width: 675px) {
+
+  /* Contact Me */
+    .contactSection {
+      width: 85%;
+      margin-top: 50px;
+    }
+/* Override margins added by AOS fade-left */
+
+
+
+  .FrontSection {
+    width: 85%;
+    margin-top: 50px;
+  }
+  .PhotoContainer > img {
+    width: 300px;
+    
+  }
+  
+  .contactCadre {
+    padding: 10px;
+    padding-left: 50px;
+  }
+  .SubmitBtn {
+    width: 160px;
+    font-size: 18px;
+  }
+  .titles {
+    padding-left: 10px;
+    font-size: 35px;
+  }
+
+
+  /* experience */
+  .experienceS > div {
+    height: fit-content;
+  }
+
+  .experienceCard {
+    width: 90%;
+    height: 380px;
+    padding: 20px 15px 10px 15px;
+  }
+  .experiencebg {
+    top: -30px;
+  }
+  .experiencetitle {
+    margin-top: 10px;
+  }
+
+  .experienceLogo {
+    position: absolute;
+    width: 60px;
+    bottom: 6px;
+    right: 20px;
+  }
+
+  .experienceDate{
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+  }
+
+  /* Work */
+  .WOrKS > div {
+    height: fit-content;
+  }
+
+  .WorkCard {
+    width: 90%;
+    height: 180px;
+    padding: 20px 15px 10px 15px;
+  }
+  .workbg {
+    top: -30px;
+  }
+  .worktitle {
+    margin-top: 10px;
+  }
+
+   .SeeProject {
+    width: 100%;
+    font-size: 12px;
+  }
+
+  .actions {
+    font-size: 20px;
+    bottom: 6px;
+    left: 10px;
+  }
+
+  .WorkLogo {
+    position: absolute;
+    width: 60px;
+    bottom: 6px;
+    right: 20px;
+  }
+
+  .WorkCard:hover > .WorkLogo {
+    top: -15px;
+    width: 100px;
+    left: -20px;
+  }
+  /* Footer */
+  .footer {
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  /* BIO */
+  .bio {
+    font-size: 30px;
+  }
+  .knowMoreBtn {
+    width: 200px;
+    font-size: 20px;
+    height: 50px;
+  }
+  .seeProjectBtn {
+    width: 90%;
+    font-size: 12px;
+    height: 50px;
+  }
+  .socialMedia {
+    display: none;
+  }
+
+  /* About Me */
+
+  .infoSections {
+    font-size: 15px;
+    border: none;
+  }
+  .circle {
+    display: none;
+  }
+  .Personalinfo {
+    font-size: 20px;
+  }
+  /* nav bar */
+  .navbar-nav {
+    width: 85%;
+    text-align: center;
+    margin-top: 0;
+    background-color: #464c55;
+  }
+
+}
