@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" href="../CSS/index.css">
+    <link rel="stylesheet" href="../CSS/blog.css">
+
+    <title>Saadallah Roufida</title>
+</head>
+
+<body data-spy="scroll" data-target=".navbar" data-offset="51">
+
+
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-muted fixed-top" id="mynav">
+        <a class="navbar-brand" href="#">
+            <img id="navlogo" src="../images/logos/mylogo.png" width="40px">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav m-auto position-absolute r-0">
+                <li class="nav-item mx-3"><a class="nav-link" href="#" id="navHome"><strong>Home</strong></a></li>
+                <li class="nav-item mx-3"><a class="nav-link" href="#aboutMe" id="navAbout"><strong>About
+                            Me</strong></a></li>
+                <li class="nav-item mx-3"><a class="nav-link" href="#Myexperience"
+                        id="navExperience"><strong>Expreience</strong></a></li>
+                <li class="nav-item mx-3"><a class="nav-link" href="#Portfolio"
+                        id="navPortfolio"><strong>Projects</strong></a></li>
+                <li class="nav-item mx-3"><a class="nav-link" href="#Blogs" id="navBlog"><strong>Blogs</strong></a></li>
+                <li class="nav-item mx-3"><a class="nav-link" href="#Contact"
+                        id="navContact"><strong>Contact</strong></a></li>
+            </ul>
+        </div>
+    </nav>
+
+
+    <div class="container mt-4" id="Blogs">
+        <br>
+        <div class="blogSection" data-aos="zoom-in-down">
+
+            <div class="blogCadre">
+                <br>
+                <div class="row customrow2">
+                    <div class="col-lg-8 offset-lg-2 text-center">
+                        <h2>Certification Authority (CA) and Digital Certificates</h2>
+                        <ul class="list-inline mb-50">
+                            <li class="list-inline-item"><a href="/author/"></a></li>
+                            <li class="list-inline-item">Thursday, Mars 23, 2023</li>
+                        </ul>
+
+                    </div>
+                    <div class="col-lg-8 offset-lg-2">
+                        <div class="post-single-content">
+                            <p>
+                                <span style="color: #BEBEBE">
+                                </span>
+                            </p>
+                            <h6>
+                                <li>Certificate Authorities (CAs)</li>
+                            </h6>
+                            <p>
+                                <span style="color: #BEBEBE">
+                                    A Certificate Authority (CA) is a trusted entity responsible for issuing digital
+                                    certificates that validate the ownership of a public key by the certificate
+                                    holder.
+                                    Some commercial CAs, such as VeriSign, are considered root CAs due to their
+                                    widespread trust. Users seeking digital certificates from these commercial CAs
+                                    are
+                                    required to pay for their services.
+                                </span>
+                            </p>
+                            <h6>
+                                <li>Introduction to OpenSSL</li>
+                            </h6>
+                            <ul style="list-style-type: circle;">
+                                <li><strong>SSL Protocol</strong></li>
+                                <p><span style="color: #BEBEBE">
+                                        The SSL (Secure Socket Layer) protocol, developed by Netscape Communications
+                                        Corporation, enables secure communication between client and server
+                                        applications. TLS (Transport Layer Security) is the evolution of SSL
+                                        conducted by the IETF.
+                                        <br><br>
+                                        A TLS session unfolds in two phases:
+                                    </span>
+
+                                <ol style="color: #BEBEBE">
+                                    <li><span style="color: #3f9db4">Handshake Phase:</span> During this phase, the
+                                        client and server identify themselves, agree on the encryption system, and
+                                        establish a key for subsequent use. Identification during the handshake is
+                                        ensured using X509 certificates.</li>
+                                    <li><span style="color: #3f9db4">Communication Phase:</span> Here, exchanged
+                                        data is compressed, encrypted, and signed.</li>
+                                </ol>
+
+                                </p>
+                                <li><strong>OpenSSL</strong></li>
+                                <p><span style="color: #BEBEBE">
+                                        OpenSSL is a cryptographic toolkit implementing the SSL/TLS protocols,
+                                        offering a library of functions written in C for developing secure
+                                        client/server applications. It provides a command-line interface enabling:
+                                        <ul style="list-style-type: square; color: #BEBEBE;">
+                                            <li>Creation of RSA, DSA keys</li>
+                                            <li>Creation of X509 certificates</li>
+                                            <li>Calculation of fingerprints (MD5, SHA, RIPEMD160, ...)</li>
+                                            <li>Encryption and decryption (RSA, AES, DES, 3DES, IDEA, RC2, RC4,
+                                                Blowfish, ...)</li>
+                                            <li>Conducting SSL/TLS client and server tests</li>
+                                            <li>Signing and encryption of emails (S/MIME)</li>
+
+                                        </ul>
+                                    </span>
+                                </p>
+                            </ul>
+
+                            <h2>Define a Certification Authority (CA)</h2>
+
+                            <p>
+                                <span style="color: #BEBEBE">
+                                    To create a CA and Create a Self-Signed X509 Certificate to Certify the Authority's
+                                    Public Key, a single command is sufficient. This command generates 2 files, one
+                                    for the RSA key <strong>ca.key</strong> and the certificate itself
+                                    <strong>ca.crt</strong> .
+                                </span>
+                            </p>
+
+                            <div class="highlight">
+                                <pre
+                                    style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">
+<span style="color:#43707e"> $ openssl</span> req <span style="color:#34b393">-x509</span><span style="color:#34b393"> -newkey</span> rsa:4096 <span style="color:#34b393">-sha256</span> <span style="color:#34b393">-days</span> 365 <span style="color:#34b393">-keyout</span> ca.key <span style="color:#34b393">-out</span> ca.crt
+    ...+.........+.....+...+....+.....+......+++++++++++++++++++++++++++++++++++++++++++++++++++++
+    ...+.........+.....+...+....+.....+......+++++++++++++++++++++++++++++++++++++++++++++++++++++
+    Enter PEM pass phrase:
+    Verifying - Enter PEM pass phrase:
+    -----
+    You are about to be asked to enter information that will be incorporated
+    into your certificate request.
+    What you are about to enter is what is called a Distinguished Name or a DN.
+    There are quite a few fields but you can leave some blank
+    For some fields there will be a default value,
+    If you enter '.', the field will be left blank.
+    -----
+    Country Name (2 letter code) [AU]:DZ
+    State or Province Name (full name) [Some-State]:SBA
+    Locality Name (eg, city) []:SBA
+    Organization Name (eg, company) [Internet Widgits Pty Ltd]:ESI
+    Organizational Unit Name (eg, section) []:ISI
+    Common Name (e.g. server FQDN or YOUR name) []: 
+    Email Address []:r.saadallah@esi-sba.dz
+                                    </code></pre>
+                            </div>
+
+                            <h2>Generate a Certificate Request for a Local Web Server</h2>
+
+                            <p>
+                                <li><span style="color: #BEBEBE">
+                                        To do this, I created a new directory, <strong>localhost</strong>. In localhost,
+                                        I created a new
+                                        file, localhost.ext. The information that needs to be written in the signed SSL
+                                        certificate will be contained in this file <code>localhost.ext</code><br>
+                                        The content of this file is:
+                                    </span></li>
+                            </p>
+                            <div class="highlight">
+                                <pre
+                                    style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">
+    authorityKeyIdentifier = keyid,issuer
+    basicConstraints = CA:FALSE
+    keyUsage = digitalSignature, nonRepudiation, keyEncipherment, dataEncipherment
+    subjectAltName = @alt_names
+    
+    [alt_names]
+    DNS.1 = localhost
+    IP.1 = 127.0.0.1
+                                        </code></pre>
+                            </div>
+                            <p>
+                                <li><span style="color: #BEBEBE">
+                                        Also, we generate the private key for the server:
+                                    </span></li>
+                            </p>
+
+                            <div class="highlight">
+                                <pre
+                                    style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">
+<span style="color:#43707e"> $ openssl</span> genrsa <span style="color:#34b393">-out</span> localhost.key 4098 
+                                    </code></pre>
+                            </div>
+                            <p>
+                                <li><span style="color: #BEBEBE">
+                                        The next step will be to generate the CSR using the key:
+                                    </span></li>
+                            </p>
+                            <div class="highlight">
+                                <pre
+                                    style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">
+<span style="color:#43707e"> $ openssl</span> req <span style="color:#34b393">-new</span> <span style="color:#34b393">-key</span> localhost.key <span style="color:#34b393">-out</span> localhost.csr
+    You are about to be asked to enter information that will be incorporated
+    into your certificate request.
+    What you are about to enter is what is called a Distinguished Name or a DN.
+    There are quite a few fields but you can leave some blank
+    For some fields there will be a default value,
+    If you enter '.', the field will be left blank.
+    -----
+    Country Name (2 letter code) [AU]:DZ
+    State or Province Name (full name) [Some-State]:SBA
+    Locality Name (eg, city) []:
+    Organization Name (eg, company) [Internet Widgits Pty Ltd]:
+    Organizational Unit Name (eg, section) []:
+    Common Name (e.g. server FQDN or YOUR name) []:
+    Email Address []:
+
+    Please enter the following 'extra' attributes
+    to be sent with your certificate request
+    A challenge password []:ssllocal
+    An optional company name []:   
+
+</code></pre>
+                            </div>
+                            <h2>Generate a Certificate for the "Localhost" Server</h2>
+                            <p><span style="color: #BEBEBE">
+                                    Now, with this localhost.csr, we can request the Certification Authority "CA" to
+                                    sign the certificate as below.
+                                </span></p>
+                            <div class="highlight">
+                                <pre
+                                    style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">
+<span style="color:#43707e"> $ openssl</span> x509 <span style="color:#34b393">-req -in</span> localhost.csr <span style="color:#34b393">-CA</span> ../ca.crt <span style="color:#34b393">-CAkey</span> ../ca.key <span style="color:#34b393">-CAcreateserial -days</span> 365 <span style="color:#34b393">-sha256 -extfile</span> localhost.ext<span style="color:#34b393"> -out</span> localhost.crt
+    Certificate request self-signature ok
+    subject=C = DZ, ST = Some-State, O = Internet Widgits Pty Ltd
+    Enter pass phrase for ../ca.key:                                   
+</code></pre>
+                            </div>
+                            <p>
+                                <span style="color: #BEBEBE">
+                                    This command takes into account <code>localhost.csr </code>, the
+                                    <code>ca.crt certificate</code>, and <code>ca.key</code>, and the certificate
+                                    extension file <code>localhost.ext</code>. These entries generate a
+                                    <code><strong></strong>localhost.crt</code> certificate file, valid for one
+                                    year.</span>
+                            </p>
+                            <h2>Deploying the certificate on a HTTPS website</h2>
+                            <p>
+                                <span style="color: #BEBEBE">
+                                    To accomplish this, I need to create a Node.js Express server that generates a
+                                    success message. I will initialize a Node.js project and install the necessary
+                                    packages such as Express and HTTPS. </span>
+                            </p>
+                            <p>
+                                <span style="color: #BEBEBE">
+                                    Firstly, the website will require the certificate file
+                                    <strong>localhost.crt</strong> and the decrypted key since our localhost.key is
+                                    encrypted. We will need to decrypt the localhost.key and also store this file as
+                                    well as below: </span>
+                            </p>
+                            <div class="highlight">
+                                <pre
+                                    style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">
+<span style="color:#43707e"> $ openssl</span> rsa <span style="color:#34b393">-in</span> localhost.key <span style="color:#34b393">-out</span> dec-localhost.key
+                                    </code></pre>
+                            </div>
+                            <div class="highlight">
+                                <pre
+                                    style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+                                    <code class="language-python" data-lang="python">
+    <span style="color:#0893af">const </span><span style="color:#34b393">fs</span> = <span style="color:#f0ebb5">require</span>(<span style="color:#e6ab74">'fs'</span>);
+    <span style="color:#0893af">const </span><span style="color:#50bed4">key</span> = <span style="color:#34b393">fs</span>.<span style="color:#f0ebb5">readFileSync</span>(<span style="color:#e6ab74">'./dec-localhost.key'</span>);
+    <span style="color:#0893af">const </span><span style="color:#50bed4">cert</span> = <span style="color:#34b393">fs</span>.<span style="color:#f0ebb5">readFileSync</span>(<span style="color:#e6ab74">'./localhost.crt'</span>);
+
+    <span style="color:#0893af">const </span><span style="color:#f0ebb5">express</span> = <span style="color:#f0ebb5">require</span>(<span style="color:#e6ab74">'express'</span>);
+    <span style="color:#0893af">const </span><span style="color:#50bed4">app</span> = <span style="color:#f0ebb5">express</span>(<span style="color:#e6ab74"></span>);
+    <span style="color:#50bed4">app</span>.<span style="color:#f0ebb5">get</span>(<span style="color:#e6ab74">'/'</span>, <span style="color:#c12fdf">(</span><span style="color:#93cfdb">req</span>, <span style="color:#93cfdb">res</span>, <span style="color:#93cfdb">next</span><span style="color:#c12fdf">)</span> <span style="color:#50bed4">=> </span><span style="color:#c12fdf">{</span>
+        <span style="color:#93cfdb">res</span>.<span style="color:#f0ebb5">status</span>(<span style="color: #f0ebb5;">200</span>).<span style="color: #f0ebb5;">send</span>(<span style="color:#e6ab74">'&lt;h1&gt;My Website to test CA&lt;/h1&gt;&lt;br/&gt;&lt;br/&gt;&lt;p&gt;it works correctly&lt;/p&gt;'</span>);
+    <span style="color:#c12fdf">}</span>);
+
+
+    <span style="color:#0893af">const </span><span style="color:#34b393">https</span> = <span style="color:#f0ebb5">require</span>(<span style="color:#e6ab74">'https'</span>);
+    <span style="color:#0893af">const </span><span style="color:#50bed4">server</span> = <span style="color:#34b393">https</span>.<span style="color:#f0ebb5">createServer</span>(<span style="color:#c12fdf">{</span><span style="color:#93cfdb"> key</span>,</span><span style="color:#93cfdb"> cert </span><span style="color:#c12fdf">}</span>,</span><span style="color:#50bed4"> app</span>);
+
+
+    <span style="color:#0893af">const </span><span style="color:#50bed4">port</span> = <span style="color:#f0ebb5">3000</span>;
+    <span style="color:#50bed4">server</span>.<span style="color:#f0ebb5">listen</span>(<span style="color:#50bed4">port</span>, <span style="color:#c12fdf">()</span> <span style="color:#50bed4">=> </span><span style="color:#c12fdf">{</span>
+        <span style="color:#93cfdb">console</span>.<span style="color:#f0ebb5">log</span>(<span style="color:#e6ab74">`Server is listening on https://localhost:</span>${port}<span style="color:#e6ab74">`</span>);
+    <span style="color:#c12fdf">}</span>);</code>
+                                </pre>
+                            </div>
+
+
+                            <h2>Test the Certificate</h2>
+                            <p>
+                                <span style="color: #BEBEBE">
+                                    Now that our server serves our SSL, we can try our <a
+                                        href="https://localhost:3000">https://localhost:3000</a>
+                                </span>
+                            </p>
+                            <div style="text-align: center;">
+                                <img class="imageblog" src="../images/blogs/imagesCA/1.png" alt="">
+
+                            </div>
+                            <br>
+                            <p>
+                                <span style="color: #BEBEBE">
+                                    Even after serving our localhost with SSL and inspecting the signed certificate,
+                                    Firefox would not trust the certification authority that signed this certificate,
+                                    which is correct; we cannot trust ourselves as CA. </span>
+                            </p>
+                            <p>
+                                <span style="color: #BEBEBE">
+                                    For the browser to trust the CA certificate we created, it is necessary to import
+                                    the certificate.
+                                </span>
+                            </p>
+                            <div style="text-align: center;">
+                                <img class="imageblog" src="../images/blogs/imagesCA/2.png" alt="">
+
+                            </div>
+                            <br>
+                            <div style="text-align: center;">
+                                <img class="imageblog3" src="../images/blogs/imagesCA/3.png" alt="">
+
+                            </div>
+                            <br>
+                            <p style="text-align: center;">
+                                <span style="color: #BEBEBE">
+                                    Then, we'll test it in Firefox as shown below:
+                                </span>
+                            </p>
+                            <div style="text-align: center;">
+                                <img class="imageblog3" src="../images/blogs/imagesCA/4.png" alt="">
+
+                            </div>
+                            <br>
+                            <p style="text-align: center;">
+                                <span style="color: #BEBEBE;">
+                                    The browser now trusts our certification authority and the certificate. </span>
+                            </p>
+                            <p>
+                                <span style="color: #BEBEBE">
+                                    Here is the content of the folder:
+                                </span>
+                            </p>
+
+                            <div class="highlight">
+                                <pre
+                                    style="color:#f8f8f2;background-color:#272822;-moz-tab-size:5;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">
+                .
+                ├── ca.crt
+                ├── ca.key
+                ├── ca.srl
+                └── localhost
+                    ├── dec-localhost.key
+                    ├── index.js
+                    ├── localhost.crt
+                    ├── localhost.csr
+                    ├── localhost.ext
+                    ├── localhost.key
+                    ├── node_modules
+                    ├── package.json
+                    └── package-lock.json
+                                                                                
+</code></pre>
+                            </div>
+
+
+                            <div id="disqus_thread"></div>
+                            <script type="application/javascript">
+                                var disqus_config = function () {
+
+
+
+                                };
+                                (function () {
+                                    if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+                                        document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+                                        return;
+                                    }
+                                    var d = document, s = d.createElement('script'); s.async = true;
+                                    s.src = '//' + "discussion-youben-blog" + '.disqus.com/embed.js';
+                                    s.setAttribute('data-timestamp', +new Date());
+                                    (d.head || d.body).appendChild(s);
+                                })();
+                            </script>
+                            <noscript>Please enable JavaScript to view the <a
+                                    href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+                            <a href="https://disqus.com" class="dsq-brlink">comments powered by <span
+                                    class="logo-disqus">Disqus</span></a>
+
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+
+    </div>
+
+
+
+    <div class="footer  py-5">
+        <div class="text-center mt-2">Copyright © 2024. All Rights Reserved</div>
+    </div>
+    <script>
+        AOS.init();
+    </script>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <script src="../JS/index.js"></script>
+
+
+
+</body>
+
+
+
+</html>

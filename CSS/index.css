@@ -217,7 +217,61 @@ i {
   color: var(--lightbrownColor);
   font-size: 30px;
 }
+/* Blog */
+.blogsS > div {
+  height: 470px;
+}
+.blogsCard {
+  width: 90%;
+  height: 400px;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+  margin: 0 auto;
+  position: relative;
+  transition: height 1s;
+  border: solid;
+  border-width: 0.01px;
+  border-color: rgba(216, 213, 212, 0.15);
+}
+.blogbg {
+  position: absolute;
+  width: 100%;
+  border-radius: 10px;
+  top: -50px;
+  left: -20px;
+  transition: all 1s;
+}
 
+.bloginfo {
+  padding: 20px;
+  width: 100%;
+  border-radius: 0 0 10px 10px;
+}
+.blogtitle {
+  font-size: 20px;
+  font-weight: 700;
+}
+.blogDetails {
+  padding-top: 10px;
+  padding-left: 10px;
+  font-size: 14px;
+  color: var(--lightbrownColor);
+}
+.ReadBlog {
+  width: 90%;
+  margin: 0 auto;
+  font-size: 16px;
+  height: 40px;
+  margin-bottom: 5px;
+  border-radius: 10px;
+}
+.imgblog{
+  height: 150px;
+  width: 100%;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+
+}
 /* experience */
 .experienceS > div {
   height: 350px;
@@ -262,6 +316,13 @@ i {
 .experienceLogo {
   position: absolute;
   width: 80px;
+  bottom: 10px;
+  right: 40px;
+  transition: all 1s;
+}
+.experienceLogoshell {
+  position: absolute;
+  width: 70px;
   bottom: 10px;
   right: 40px;
   transition: all 1s;
@@ -415,13 +476,11 @@ i {
 
 
 /* Contact Me */
-.ContactMe {
 
-}
 .contactSection {
   width: 40%;
   margin: 0 auto;
-  margin-top: 100px;
+  margin-top: 50px;
 }
 .contacthref
 {
@@ -465,6 +524,22 @@ i {
     font-size: 35px;
   }
 
+/* Blog */
+  .blogsS > div {
+    height: fit-content;
+  }
+
+  .blogsCard {
+    width: 90%;
+    height: 380px;
+    padding: 20px 15px 10px 15px;
+  }
+  .blogbg {
+    top: -30px;
+  }
+  .blogtitle {
+    margin-top: 10px;
+  }
 
   /* experience */
   .experienceS > div {
@@ -489,7 +564,12 @@ i {
     bottom: 6px;
     right: 20px;
   }
-
+.experienceLogoshell{
+  position: absolute;
+  width: 50px;
+  bottom: 6px;
+  right: 20px; 
+}
   .experienceDate{
     position: absolute;
     bottom: 20px;
