@@ -531,11 +531,14 @@ i {
 
   .blogsCard {
     width: 90%;
-    height: 380px;
+    height: 450px;
     padding: 20px 15px 10px 15px;
   }
+
   .blogbg {
+    
     top: -30px;
+    
   }
   .blogtitle {
     margin-top: 10px;
